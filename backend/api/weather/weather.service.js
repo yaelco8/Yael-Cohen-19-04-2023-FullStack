@@ -6,7 +6,7 @@ module.exports={
 
 async function getCurrWeather(key){
     try {
-        const apiKey=process.env.API_KEY
+        const apiKey=process.env.API_KEY1
         return axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=${apiKey}&details=false`)
         .then(res=>res.data)
         .catch(err=>{
