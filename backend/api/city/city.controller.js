@@ -14,7 +14,6 @@ async function getCities(req,res){
                 gCities.push(city)
                 
         })
-        console.log("gCities",gCities);
         res.json(gCities)
     } catch (error) {
         console.log("city.controller-cannot get cities",error);
