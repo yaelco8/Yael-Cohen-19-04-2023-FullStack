@@ -1,0 +1,15 @@
+.LeftCities{
+    &__city{
+        color: white;
+        cursor: pointer;
+        margin: rem(5px);
+        &:hover{
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+        &:focus{
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+    }
+}

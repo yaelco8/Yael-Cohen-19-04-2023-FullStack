@@ -1,0 +1,80 @@
+.FavoritesPage{
+    padding:$padding;
+    &__container{
+        @include flex(row,flex-start,space-between);
+        width: 100%;
+        padding: $padding;
+        &__noFavorites{
+            color: white;
+        }
+        &__weather{
+            width: 70%;
+            height: 100%;
+            &__city{
+                display: grid;
+                width: rem(600px);
+                height: rem(100px);
+                grid-template-columns: 1fr rem(100px) rem(100px);
+                grid-template-rows: rem(50px) rem(18px);
+                border: 1px solid white;
+                border-radius: rem(8px);
+                padding: rem(20px);
+                align-items: center;
+                justify-content: center;
+                background-color:#a39d9d75 ;
+                color: white;
+                margin-bottom: rem(15px);
+                .cityName{
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+                    font-size: rem(30px);
+                    align-self: flex-start;
+                }
+                .temp{
+                    grid-column: 1/2;
+                    grid-row: 2/-1;
+                    align-self: flex-start;
+                }
+                .text{
+                    grid-column: 1/2;
+                    grid-row: 2/-1;
+                    align-self: flex-start;
+                    justify-self: flex-start;
+                    margin-inline-start: rem(70px);
+                }
+                .img{
+                    grid-column: 2/3;
+                    grid-row: 1/-1;
+                    justify-self: center;
+                    img{
+                        width: rem(70px);
+                        height: rem(70px);
+                    }
+                }
+                .removeFavorite{
+                    grid-column: 3/-1;
+                    grid-row: 1/2;
+                    height: rem(40px);
+                    width: rem(100px);
+                    justify-self: flex-end;
+                    align-self: flex-start;
+                    height: rem(30px);
+                    border-radius: rem(8px);
+                    background-color: #a39d9d75;
+                    border:1px solid #a39d9d75 ;
+                    color: white;
+                    cursor: pointer;
+                    &:hover{
+                      color: #a39d9d75;
+                    }
+                }
+            }
+        }
+        &__cities{
+            width: 30%;
+            height: 100%;
+            padding-left: rem(20px);
+            border-left: 2px solid white;
+        }
+    }
+}

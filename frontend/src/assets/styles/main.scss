@@ -1,0 +1,17 @@
+//setup
+@import "setup/functions";
+@import "setup/mixins";
+@import "setup/variables";
+
+//basics
+@import "basics/base"; 
+@import "basics/layout";
+@import "basics/typography";
+
+//pages
+@import "pages/homePage.scss";
+@import "pages/favoritesPage.scss";
+
+//cmps
+@import "cmps/leftCities.scss";
+@import "cmps/header.scss"

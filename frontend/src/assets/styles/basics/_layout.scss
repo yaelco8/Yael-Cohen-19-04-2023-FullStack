@@ -1,0 +1,16 @@
+.App{
+    min-height: 100vh;
+  display: grid;
+  grid-template-columns: $padding minmax(auto, calc(100vw - $padding - $padding)) $padding;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, #2f7783 , #6e5b88);
+  font-family: Montserrat, sans-serif;
+
+  > * {
+    grid-column: 2;
+  }
+  .full {
+    grid-column: 1/-1;
+  }
+}

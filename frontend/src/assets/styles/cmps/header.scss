@@ -1,0 +1,29 @@
+.Header{
+    &__nav{
+        width: 100%;
+        height: rem(45px);
+        @include flex(row,center,center);
+         &__link{
+           margin-right:rem(20px);
+           text-decoration: none;
+           color:white;
+           padding:rem(5px);
+           border-radius: rem(8px);
+           &:hover{
+               background-color: rgb(76 74 74 / 44%);
+            }
+            &:focus{
+                background-color: rgb(76 74 74 / 44%);
+            }
+            &__on{
+                margin-right:rem(20px);
+                text-decoration: none;
+                color:white;
+                background-color: rgb(76 74 74 / 44%);
+                padding:rem(5px);
+                border-radius: rem(8px);
+
+           }
+        }
+    }
+}
