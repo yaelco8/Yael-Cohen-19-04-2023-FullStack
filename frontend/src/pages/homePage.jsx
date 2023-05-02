@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React,{ useState } from "react"
 import { useDispatch,useSelector } from "react-redux"
 import {getCities} from "../store/cityWeather/apiCalls"
 import {addToFavorites,closeModal} from "../store/favorite/apiCalls"

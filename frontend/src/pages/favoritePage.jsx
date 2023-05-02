@@ -1,6 +1,6 @@
+import React,{ useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { LeftCities } from "../cmps/LeftCities"
-import { useEffect } from "react";
 import { getFavorites, deleteFavorite } from "../store/favorite/apiCalls"
 import weatherImg from "../constants/weatherImg"
 
